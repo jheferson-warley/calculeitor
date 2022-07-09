@@ -5,9 +5,11 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background: linear-gradient(to right, #233329, #41b883);
 }
+
 .grid-container {
   display: grid;
   justify-content: center;
@@ -16,6 +18,7 @@ body {
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
+
 .grid-container > button {
   cursor: pointer;
   font-size: 2rem;
@@ -25,17 +28,19 @@ body {
   color: #eee;
 }
 
-.grid-container > button :hover {
+.grid-container > button:hover {
   background-color: #eee;
   color: #111;
 }
 
 .grid-container > .operator {
-  background-color: #41b88375;
+  background: #41b88375;
 }
+
 .span-two {
   grid-column: span 2;
 }
+
 .grid-container > .output {
   grid-column: 1 / -1;
   background: #222;
@@ -47,10 +52,12 @@ body {
   word-wrap: break-word;
   word-break: break-all;
 }
+
 .grid-container > .output > .previous-operand {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
 }
+
 .grid-container > .output > .current-operand {
   color: white;
   font-size: 2.5rem;
